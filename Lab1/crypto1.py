@@ -40,7 +40,7 @@ while count > 0:
     k = 1
     
     s = "g = " + str(i)
-    if (i**stepen[0] % modul == modul - 1):
+    if (i**stepen[0] % modul != 1):
         s += "; " + str(i) + "^" + str(stepen[0]) + " mod " + str(modul) + " = " + str(modul-1) 
         for elem in stepen[1:]:
             s += "; " + str(i) + "^" + str(elem) + " mod " + str(modul) + " = " + str(i**elem % modul)
