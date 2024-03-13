@@ -50,9 +50,6 @@ def sposob2(a,b,m):
         else:
             p.append(q[i]*p[i-1] + p[i-2])
             n = i
-    print (p)
-    print(q)
-    print (n)
     x = ((-1)**(n) * p[n-1] * b) % m
     x_f = "x = " + str(x) + "(mod " + str(m) + ")"   
     print("2 sposob")
@@ -74,13 +71,13 @@ no = nod(a,m)
 if no>1 and b%no!=0:
     print ("Решения нет")
 else:
-    print (a,b,m,no)
+    
     a = int(a / no)
     b = int(b / no)
     m = int(m / no)
-    print (a,b,m,no)
+    
     no = nod(a,m)
-    print (a,b,m,no)
+    
     sposob1(a,b,m)
 
     sposob2(a,b,m)
