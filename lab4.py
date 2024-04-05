@@ -77,33 +77,24 @@ def generate_elements_and_minimal_polynomials(m, modulus, alpha_start=0b10):
         print(binary_to_polynomial(element))
 
 
-# Задание 1-2
+
 print(find_cyclotomic_classes(4))
 print("Задание 1, для полинома 11001")
 generate_elements_and_minimal_polynomials(4, 0b11001)
-
 print("\nЗадание 2, для полинома 10011")
 generate_elements_and_minimal_polynomials(4, 0b10011)
-
-# Задание 3-6
-print("\nЗадание 3-6")
 print(find_cyclotomic_classes(5))
-print("Циклотомический класс и минимальный многочлен для x:")
+print("Задание 3, циклотомический класс и минимальный многочлен для x:")
 generate_elements_and_minimal_polynomials(5, 0b100101, 0b10)
-print("\nЦиклотомический класс и минимальный многочлен для x^3:")
+print("\nЗадание 4, циклотомический класс и минимальный многочлен для x^3:")
 generate_elements_and_minimal_polynomials(5, 0b100101, 0b100)
-print("\nЦиклотомический класс и минимальный многочлен для x^5:")
+print("\nЗадание 5, циклотомический класс и минимальный многочлен для x^5:")
 generate_elements_and_minimal_polynomials(5, 0b100101, 0b10000)
-print("\nЦиклотомический класс и минимальный многочлен для x^7:")
+print("\nЗадание 6, циклотомический класс и минимальный многочлен для x^7:")
 generate_elements_and_minimal_polynomials(5, 0b100101, 0b1000000)
-
-# Задание 7-8
-print("\nЗадание 7")
-print("\nЦиклотомические классы и минимальные многочлены в поле Галуа x^5+x^3+1: ")
+print("\nЗадание 7,Циклотомические классы и минимальные многочлены в поле Галуа x^5+x^3+1: ")
 generate_elements_and_minimal_polynomials(5, 0b101001, 0b10)  # для alpha = x
-
-print("\nЗадание 8")
-print("\nЦиклотомические классы и минимальные многочлены в поле Галуа x^5+x^3+x^2+x+1: ")
+print("\nЗадание 8, циклотомические классы и минимальные многочлены в поле Галуа x^5+x^3+x^2+x+1: ")
 generate_elements_and_minimal_polynomials(5, 0b101111, 0b10)  # для alpha = x
 
 
